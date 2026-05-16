@@ -128,7 +128,8 @@ else:
             site = st.text_input("请输入网站/应用名称 (例如: 淘宝、Github):")
             account = st.text_input("请输入登录账号:")
             password = st.text_input("请输入登录密码:", type="password")
-            submit_btn = st.form_submit_with_button_label("加密保存记录")
+            #  这是修正后的正确代码
+            submit_btn = st.form_submit_button("加密保存记录")
             
         if submit_btn:
             if site and account and password:
