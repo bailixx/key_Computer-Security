@@ -88,7 +88,7 @@ manager = st.session_state.manager
 # ---- 登录与初始化验证流程 ----
 if manager.master_hash is None:
     st.subheader("🆕 系统首次运行，请初始化主密码")
-    new_pwd = st.text_input("请设置您的大师级主密码 (Master Password):", type="password")
+    new_pwd = st.text_input("请设置您的主密码 (Master Password):", type="password")
     confirm_pwd = st.text_input("请再次输入主密码以确认:", type="password")
     
     if st.button("完成系统初始化"):
